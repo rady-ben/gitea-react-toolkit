@@ -50,9 +50,9 @@ export const getContentFromFile = async (file) => {
   if (content && encoding === 'base64') {
     _content = decodeBase64ToUtf8(content);
   } else if (!content && download_url) {
-    _content = await get({ url: download_url, noCache: true });
+    _content = await get({ url: download_url, noCache: false });
   } else if (!content && git_url) {
-    const blobObject = await get({ url: git_url, noCache: true });
+    const blobObject = await get({ url: git_url, noCache: false });
 
     if (blobObject.content && blobObject.encoding === 'base64') {
       _content = decodeBase64ToUtf8(blobObject.content);
