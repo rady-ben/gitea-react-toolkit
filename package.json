@@ -93,7 +93,7 @@
     "typescript": "3.7.2",
     "webpack": "^4.44.2"
   },
-  "main": "dist/index.js",
+  "main": "node_modules/gitea-react-toolkit/dist/index.js",
   "files": [
     "dist/*"
   ],
