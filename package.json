@@ -93,7 +93,7 @@
     "typescript": "3.7.2",
     "webpack": "^4.44.2"
   },
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "files": [
     "dist/*"
   ],

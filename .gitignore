@@ -18,7 +18,6 @@ cypress.env.json
 # testing
 /coverage/**
 /.docz/**
-/dist/**
 /.nyc_output/**
 
 # production
