@@ -62,7 +62,7 @@ var storeZipFromRepo = /*#__PURE__*/function () {
                 server: server,
                 responseType: 'arraybuffer'
               },
-              noCache: true,
+              noCache: false,
               fullResponse: true
             });
 

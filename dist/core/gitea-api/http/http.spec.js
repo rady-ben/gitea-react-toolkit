@@ -53,7 +53,7 @@ describe('get', function () {
           case 0:
             params = {
               config: config,
-              noCache: true,
+              noCache: false,
               url: 'https://passing.com'
             };
             _context.next = 3;
@@ -197,7 +197,7 @@ describe('delete', function () {
           case 0:
             params = {
               config: config,
-              noCache: true,
+              noCache: false,
               url: 'https://passing.com'
             };
             _context6.next = 3;

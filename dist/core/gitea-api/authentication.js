@@ -96,7 +96,7 @@ var authenticate = /*#__PURE__*/function () {
             });
             _config = _objectSpread(_objectSpread({}, config), {}, {
               headers: _objectSpread(_objectSpread({}, config.headers), authHeaders),
-              noCache: true
+              noCache: false
             });
             _context.next = 7;
             return (0, _users.getUser)({

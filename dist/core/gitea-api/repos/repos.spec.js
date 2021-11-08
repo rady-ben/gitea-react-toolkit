@@ -87,7 +87,7 @@ describe('Repos', function () {
               expect(getSpy).toHaveBeenCalledTimes(1);
               expect(getSpy).toHaveBeenCalledWith(expect.objectContaining({
                 config: config,
-                noCache: true,
+                noCache: false,
                 url: "api/v1/repos/".concat(params.owner, "/").concat(params.repo)
               }));
               expect(res).toEqual('OK');
@@ -122,7 +122,7 @@ describe('Repos', function () {
               expect(getSpy).toHaveBeenCalledTimes(1);
               expect(getSpy).toHaveBeenCalledWith(expect.objectContaining({
                 config: config,
-                noCache: true,
+                noCache: false,
                 url: "api/v1/repos/".concat(params.owner, "/").concat(params.repo)
               }));
               expect(res).toEqual('OK');
@@ -156,7 +156,7 @@ describe('Repos', function () {
               expect(getSpy).toHaveBeenCalledTimes(1);
               expect(getSpy).toHaveBeenCalledWith(expect.objectContaining({
                 config: config,
-                noCache: true,
+                noCache: false,
                 url: "api/v1/repos/".concat(params.owner, "/").concat(params.repo)
               }));
               expect(postSpy).toHaveBeenCalledTimes(1);

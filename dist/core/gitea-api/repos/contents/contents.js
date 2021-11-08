@@ -147,7 +147,7 @@ var readContent = /*#__PURE__*/function () {
               params: {
                 ref: ref
               },
-              noCache: true
+              noCache: false
             });
 
           case 5:

@@ -76,7 +76,7 @@ var readRepo = /*#__PURE__*/function () {
             return (0, _.get)({
               url: url,
               config: config,
-              noCache: true
+              noCache: false
             });
 
           case 5:
