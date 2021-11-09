@@ -70,7 +70,7 @@ export const authenticate: Authenticate = async ({
     _config = {
         ...config,
         headers: { ...config.headers, ...authHeaders },
-        noCache: true,
+        noCache: false,
     };
     user = await getUser({ username, config: _config });
     token = await ensureToken({ username, config: _config });

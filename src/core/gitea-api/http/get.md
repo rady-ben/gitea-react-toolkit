@@ -10,7 +10,7 @@ const props = {
   },
   params: { attribute: 'value' },
   payload: { key: 'value' },
-  noCache: true,
+  noCache: false,
 };
 
 <Core

@@ -38,7 +38,7 @@ describe('get', () => {
   it('should pass with noCache', async () => {
     const params = {
       config,
-      noCache: true,
+      noCache: false,
       url: 'https://passing.com',
     };
     const res = await http.get(params);
@@ -102,7 +102,7 @@ describe('delete', () => {
   it('should perform DELETE method', async () => {
     const params = {
       config,
-      noCache: true,
+      noCache: false,
       url: 'https://passing.com',
     };
     const res = await http.get(params);

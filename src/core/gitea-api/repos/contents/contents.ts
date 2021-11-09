@@ -105,7 +105,7 @@ export const readContent = async ({
 
   try {
     contentObject = await get({
-      url, config, params: { ref }, noCache: true,
+      url, config, params: { ref }, noCache: false,
     });
   } catch (error) {
     throw new Error('Error reading file.');

@@ -48,7 +48,7 @@ describe('Repos', () => {
       expect(getSpy).toHaveBeenCalledTimes(1);
       expect(getSpy).toHaveBeenCalledWith(expect.objectContaining({
         config,
-        noCache: true,
+        noCache: false,
         url: `api/v1/repos/${params.owner}/${params.repo}`,
       }));
       expect(res).toEqual('OK');
@@ -68,7 +68,7 @@ describe('Repos', () => {
       expect(getSpy).toHaveBeenCalledTimes(1);
       expect(getSpy).toHaveBeenCalledWith(expect.objectContaining({
         config,
-        noCache: true,
+        noCache: false,
         url: `api/v1/repos/${params.owner}/${params.repo}`,
       }));
       expect(res).toEqual('OK');
@@ -87,7 +87,7 @@ describe('Repos', () => {
       expect(getSpy).toHaveBeenCalledTimes(1);
       expect(getSpy).toHaveBeenCalledWith(expect.objectContaining({
         config,
-        noCache: true,
+        noCache: false,
         url: `api/v1/repos/${params.owner}/${params.repo}`,
       }));
       expect(postSpy).toHaveBeenCalledTimes(1);

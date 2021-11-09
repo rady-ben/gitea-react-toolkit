@@ -35,7 +35,7 @@ export const storeZipFromRepo = async ({
         server,
         responseType: 'arraybuffer',
       },
-      noCache: true,
+      noCache: false,
       fullResponse: true,
     });
 

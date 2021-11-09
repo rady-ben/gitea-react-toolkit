@@ -43,7 +43,7 @@ export const readRepo = async ({
 
   try {
     response = await get({
-      url, config, noCache: true,
+      url, config, noCache: false,
     });
   } catch (error) {
     response = null;
